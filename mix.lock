@@ -1,12 +1,13 @@
-%{"certifi": {:hex, :certifi, "0.3.0"},
+%{"certifi": {:git, "https://github.com/certifi/erlang-certifi", "3e86db680c8b7194c84832fbd6d438158f171996", [tag: "0.4.0"]},
   "exactor": {:hex, :exactor, "2.2.0"},
   "exjsx": {:hex, :exjsx, "3.2.0"},
   "exvcr": {:hex, :exvcr, "0.7.1"},
-  "hackney": {:hex, :hackney, "1.4.10"},
+  "hackney": {:git, "https://github.com/egobrain/hackney.git", "4a46349ade30c837864f8302b6b95db34b1499d2", [branch: "patch-2"]},
   "httpoison": {:hex, :httpoison, "0.8.1"},
-  "idna": {:hex, :idna, "1.1.0"},
+  "idna": {:git, "https://github.com/benoitc/erlang-idna", "2cef174cccd09f877fa54d1af722e8fda49026da", [tag: "1.1.0"]},
   "jsx": {:hex, :jsx, "2.6.2"},
   "meck": {:hex, :meck, "0.8.4"},
-  "mimerl": {:hex, :mimerl, "1.0.2"},
+  "metrics": {:git, "https://github.com/benoitc/erlang-metrics", "c6eb4dcf29f9e907539915e2ab996f40c2ec7e8e", [tag: "1.0.1"]},
+  "mimerl": {:git, "https://github.com/benoitc/mimerl", "678aba028a690da6822c87410d475841c048b6bf", [tag: "1.0.2"]},
   "poison": {:hex, :poison, "2.1.0"},
-  "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.5"}}
+  "ssl_verify_hostname": {:git, "https://github.com/deadtrickster/ssl_verify_hostname.erl", "17f09150a4dfd4871b164795f42929153726f161", [tag: "1.0.6"]}}
