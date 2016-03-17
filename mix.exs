@@ -30,7 +30,7 @@ defmodule HexTweet.Mixfile do
   defp deps do
     [
       {:exvcr, "~> 0.7", only: :test},
-      {:httpoison, github: "enilsen16/httpoison", override: true},
+      {:httpoison, "~> 0.8.2"},
       {:poison, "~> 2.0"}
     ]
   end
