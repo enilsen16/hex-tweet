@@ -13,4 +13,11 @@ defmodule ParseTest do
       assert {:ok, %HTTPoison.Response{status_code: 200, body: _body}} = response
     end
   end
+
+  test "returns a parsed response" do
+    use_cassette "httpoison_get" do
+      response = HexTweet.Parse.get("https://hex.pm/api/packages?sort=updated_at")
+      assert [%{}| _] = HexTweet.Parse.parse(response)
+    end
+  end
 end
