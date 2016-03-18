@@ -1,5 +1,5 @@
 defmodule ParseTest do
-  use ExUnit.Case
+  use ExUnit.Case, async: false
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
   doctest HexTweet
 
@@ -25,8 +25,10 @@ defmodule ParseTest do
     use_cassette "httpoison_get" do
       response = HexTweet.Parse.get("https://hex.pm/api/packages?sort=updated_at")
                   |> HexTweet.Parse.parse
-      result = HexTweet.Parse.sort(List.first(response))
-      assert [%HexTweet.Parse{name: _, description: _, url: _, updated_at: _}] = result
+      use_cassette "get_version" do
+        result = HexTweet.Parse.sort(List.first(response))
+        assert [%HexTweet.Parse{name: _, description: _, version: _, url: _, updated_at: _}] = result
+      end
     end
   end
 end
