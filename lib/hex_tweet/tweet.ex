@@ -11,7 +11,7 @@ defmodule HexTweet.Tweet do
   end
 
   def post(tweet) do
-
+    ExTwitter.update(tweet)
   end
 
   defp _build(structure) do
