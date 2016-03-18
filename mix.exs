@@ -29,11 +29,11 @@ defmodule HexTweet.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:extwitter, "~> 0.6"}
+      {:extwitter, "~> 0.6"},
       {:httpoison, "~> 0.8.2"},
       {:oauth, github: "tim/erlang-oauth"},
-      {:poison, "~> 2.0"},
-      {:exvcr, "~> 0.7", only: :test},
+      {:poison, "~> 2.0", override: true},
+      {:exvcr, "~> 0.7", only: :test}
     ]
   end
 end
