@@ -2,13 +2,23 @@ defmodule HexTweet.Tweet do
 
   def build(structure) when is_map(structure) do
     tweet = "#{structure.name}(#{structure.version}): #{structure.description}\n#{structure.url}"
-    case String.length(tweet) <= 160 do
+    case String.length(tweet) <= 158 do
       true ->
-        tweet
+        {:ok, tweet}
+      false ->
+        {:ok, _build(structure)}
     end
   end
 
   def post(tweet) do
 
+  end
+
+  defp _build(structure) do
+    length = String.length("#{structure.name}(#{structure.version}): \n#{structure.url}")
+    length_of_description = (158 - length) - 3
+    <<string::binary-size(length_of_description), _::binary >> = structure.description
+    String.strip(string)
+    "#{structure.name}(#{structure.version}): #{string}...\n#{structure.url}"
   end
 end
