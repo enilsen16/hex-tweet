@@ -14,7 +14,7 @@ defmodule HexTweet.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison],
+    [applications: [:logger, :httpoison, :extwitter],
      mod: {HexTweet, []}]
   end
 
@@ -29,9 +29,11 @@ defmodule HexTweet.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:exvcr, "~> 0.7", only: :test},
+      {:extwitter, "~> 0.6"}
       {:httpoison, "~> 0.8.2"},
-      {:poison, "~> 2.0"}
+      {:oauth, github: "tim/erlang-oauth"},
+      {:poison, "~> 2.0"},
+      {:exvcr, "~> 0.7", only: :test},
     ]
   end
 end
