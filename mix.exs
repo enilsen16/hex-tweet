@@ -5,6 +5,9 @@ defmodule HexTweet.Mixfile do
     [app: :hex_tweet,
      version: "0.0.1",
      elixir: "~> 1.2",
+     preferred_cli_env: [
+       vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
+     ],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps]

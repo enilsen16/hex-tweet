@@ -9,4 +9,6 @@ otp_release:
 install:
   - mix local.hex --force
   - mix deps.get
-  - mix vcr.delete
+
+script:
+  - mix test
