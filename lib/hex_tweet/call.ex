@@ -6,13 +6,13 @@ defmodule HexTweet.Call do
   end
 
   def init(state) do
-    Process.send_after(self(), :work, 10000)
+    Process.send_after(self(), :work, 1000)
     {:ok, state}
   end
 
   def handle_info(:work, state) do
-    #Do work here
-    Process.send_after(self(), :work, 10000)
+    HexTweet.Run.execute
+    Process.send_after(self(), :work, 1000)
     {:noreply, state}
   end
 end
