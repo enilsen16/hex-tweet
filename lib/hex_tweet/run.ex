@@ -2,18 +2,26 @@ defmodule HexTweet.Run do
   alias HexTweet.{Parse, Tweet}
   use Timex
 
-  def execute do
+  def execute(time) do
+    converted_time = Timex.shift(Timex.DateTime.now, seconds: -time)
     body = "https://hex.pm/api/packages"
       |> Parse.get
       |> Parse.parse
 
     for package <- body do
-      case Timex.diff(Time.now, package["updated_at"], :seconds) <= 30  do
+      case Timex.after?(Timex.parse!(package["updated_at"], "{ISO:Extended}"), converted_time)  do
         true ->
-          IO.puts package
+          tweet(package)
         _ ->
-          Timex.after?(Timex.DateTime.today, updated_at)
+          :do_nothing
       end
     end
+  end
+
+  defp tweet(package) do
+    package
+      |> Parse.sort
+      |> Tweet.build
+      |> Tweet.post 
   end
 end
