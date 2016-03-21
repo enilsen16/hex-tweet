@@ -12,7 +12,7 @@ defmodule HexTweet.Run do
         true ->
           IO.puts package
         _ ->
-          IO.inspect Timex.diff(DateTime.now, package["updated_at"], :seconds)
+          Timex.after?(Timex.DateTime.today, updated_at)
       end
     end
   end
