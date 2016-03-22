@@ -8,10 +8,10 @@ install:
 - mix deps.get
 script:
 - mix test
-deploy:
-  provider: heroku
-  api_key:
-    secure: ajigK6gVR4CE2eIfe7MmChv97YzIDkeeKF8YUlyRy0i2WoPnoxDqu6TSml9422wNZGqdqxXcB+358hanH39vLltx0OyhGYDEYZFmFNQQFGyXFsAGArhthsS3OKUaAzDKmOtaXeDlJ1m6Iaz1kJ/CDOHXsXxfA3aJMAC8Bk0lj+2aVuTTpVl/Lh8Go1O6oILLbO9ivCh4WtClZ/XKFwBDMs4viqY0Nb67J4/+AYDoSrbQllVg5n8o7UtFJmmYbr9M1ctmh2qpFkRKkgGzEc/jYURSgxOaj7M5F3Kq7tC4BASc5cuI/5h7GAYRjzkATT3/vighRSPPfWDi/KMXGCNTNA1tqnRk5UFDigsUH5DrzNYijtOS3Y+0eP17TLQy7MMrZ6qlNdlbzel/xM49tR13/jyrpVtANmBqizsDB+VwtXdKDhAkhPavz9bRydSg1q+5cVhrojiOIhTNOKb+APKrWqpQI0JisVNKQB+kBI3fMK0FF7563w8KMg16Be/a5YuyiIH7FYrOtgrDbxg9mnIzgzZelXPMLSbOcGQcC7ka8sGSgjhjW4GtkRp2FQhmmFgTmJt0IiILdGGvTKBT9bh+x/YOwiB5D/kPzM5sJqHuFtntDDHYeH22ig3mUwCEOQbymRO6YuoFf31glOu9hi/1OvVdwycrGovuPgLddkVEx5k=
-  app: hex-tweet
-  on:
-    repo: enilsen16/hex-tweet
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: ajigK6gVR4CE2eIfe7MmChv97YzIDkeeKF8YUlyRy0i2WoPnoxDqu6TSml9422wNZGqdqxXcB+358hanH39vLltx0OyhGYDEYZFmFNQQFGyXFsAGArhthsS3OKUaAzDKmOtaXeDlJ1m6Iaz1kJ/CDOHXsXxfA3aJMAC8Bk0lj+2aVuTTpVl/Lh8Go1O6oILLbO9ivCh4WtClZ/XKFwBDMs4viqY0Nb67J4/+AYDoSrbQllVg5n8o7UtFJmmYbr9M1ctmh2qpFkRKkgGzEc/jYURSgxOaj7M5F3Kq7tC4BASc5cuI/5h7GAYRjzkATT3/vighRSPPfWDi/KMXGCNTNA1tqnRk5UFDigsUH5DrzNYijtOS3Y+0eP17TLQy7MMrZ6qlNdlbzel/xM49tR13/jyrpVtANmBqizsDB+VwtXdKDhAkhPavz9bRydSg1q+5cVhrojiOIhTNOKb+APKrWqpQI0JisVNKQB+kBI3fMK0FF7563w8KMg16Be/a5YuyiIH7FYrOtgrDbxg9mnIzgzZelXPMLSbOcGQcC7ka8sGSgjhjW4GtkRp2FQhmmFgTmJt0IiILdGGvTKBT9bh+x/YOwiB5D/kPzM5sJqHuFtntDDHYeH22ig3mUwCEOQbymRO6YuoFf31glOu9hi/1OvVdwycrGovuPgLddkVEx5k=
+#   app: hex-tweet
+#   on:
+#     repo: enilsen16/hex-tweet
