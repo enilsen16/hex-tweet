@@ -13,7 +13,7 @@ defmodule HexTweet.Call do
   end
 
   def handle_info(:work, state) do
-    HexTweet.Run.execute(div(@time_to_subtract, 1000))
+    HexTweet.Run.execute(@time_to_subtract)
     Process.send_after(self(), :work, @time_to_subtract)
     {:noreply, state}
   end

@@ -3,8 +3,8 @@ defmodule HexTweet.Run do
   use Timex
 
   def execute(time) do
-    converted_time = Timex.shift(Timex.DateTime.now, seconds: -time)
-    body = "https://hex.pm/api/packages"
+    converted_time = Timex.shift(Timex.DateTime.now, milliseconds: -time)
+    body = "https://hex.pm/api/packages?sort=updated_at"
       |> Parse.get
       |> Parse.parse
 
