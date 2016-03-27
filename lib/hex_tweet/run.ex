@@ -26,7 +26,7 @@ defmodule HexTweet.Run do
       {:ok, tweet} ->
         tweet
         |> Tweet.build
-        # |> Tweet.post
+        |> Tweet.post
     end
   end
 end

@@ -7,8 +7,6 @@ defmodule HexTweet.Tweet do
         {:ok, tweet}
       false ->
         {:ok, _build(structure)}
-      _ ->
-        :error
     end
   end
 
