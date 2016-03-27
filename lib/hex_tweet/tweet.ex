@@ -2,7 +2,6 @@ defmodule HexTweet.Tweet do
 
   def build(structure) do
     tweet = "#{structure.name}(#{structure.version}): #{structure.description} #{structure.url}"
-    IO.inspect tweet
     case String.length(tweet) <= 158 do
       true ->
         {:ok, tweet}

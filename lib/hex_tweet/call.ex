@@ -8,13 +8,13 @@ defmodule HexTweet.Call do
   end
 
   def init(state) do
-    Process.send_after(self(), :work, 1000)
+    Process.send_after(self(), :work, @time_to_subtract)
     {:ok, state}
   end
 
   def handle_info(:work, state) do
-    HexTweet.Run.execute(3 * (60 * 60 * 1000))
-    Process.send_after(self(), :work, 1000)
+    HexTweet.Run.execute(@time_to_subtract)
+    Process.send_after(self(), :work, @time_to_subtract)
     {:noreply, state}
   end
 end
