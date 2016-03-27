@@ -12,7 +12,6 @@ defmodule HexTweet.Run do
       case Timex.after?(Timex.parse!(package["updated_at"], "{ISO:Extended}"), converted_time)  do
         true ->
           tweet(package)
-          IO.puts "#{package["name"]} updated!"
         _ ->
           :error
       end

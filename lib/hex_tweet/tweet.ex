@@ -10,7 +10,8 @@ defmodule HexTweet.Tweet do
     end
   end
 
-  def post(tweet) do
+  def post({:ok, tweet}) do
+    IO.puts "#{tweet}"
     ExTwitter.update(tweet)
   end
 
