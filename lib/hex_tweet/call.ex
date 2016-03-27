@@ -1,7 +1,8 @@
 defmodule HexTweet.Call do
+  alias HexTweet.Run
   use GenServer
 
-  @time_to_subtract 15000 #millaseconds
+  @time_to_subtract 15000 # millaseconds
 
   def start_link do
     GenServer.start_link(__MODULE__, %{})
@@ -13,7 +14,7 @@ defmodule HexTweet.Call do
   end
 
   def handle_info(:work, state) do
-    HexTweet.Run.execute(@time_to_subtract)
+    Run.execute(@time_to_subtract)
     Process.send_after(self(), :work, @time_to_subtract)
     {:noreply, state}
   end

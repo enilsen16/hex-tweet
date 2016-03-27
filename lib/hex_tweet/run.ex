@@ -1,10 +1,12 @@
 defmodule HexTweet.Run do
   alias HexTweet.{Parse, Tweet}
+  alias Timex.{DateTime}
   use Timex
 
   def execute(time) do
-    converted_time = Timex.shift(Timex.DateTime.now, milliseconds: -time)
-    body = "https://hex.pm/api/packages?sort=updated_at"
+    converted_time = Timex.shift(DateTime.now, milliseconds: -time)
+    body =
+      "https://hex.pm/api/packages?sort=updated_at"
       |> Parse.get
       |> Parse.parse
 

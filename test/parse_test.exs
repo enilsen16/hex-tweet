@@ -23,8 +23,10 @@ defmodule ParseTest do
 
   test "sorts correctly based on updated_at" do
     use_cassette "httpoison_get" do
-      response = HexTweet.Parse.get("https://hex.pm/api/packages?sort=updated_at")
-                  |> HexTweet.Parse.parse
+      response =
+        "https://hex.pm/api/packages?sort=updated_at"
+        |> HexTweet.Parse.get
+        |> HexTweet.Parse.parse
       use_cassette "get_version" do
         result = HexTweet.Parse.sort(List.first(response))
         assert {:ok, %HexTweet.Parse{name: _, description: _, version: _, url: _, updated_at: _}} = result

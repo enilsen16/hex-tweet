@@ -1,4 +1,7 @@
 defmodule HexTweet.Parse do
+  alias HexTweet.Parse
+  alias Poison.Parser
+
   use HTTPoison.Base
 
   defstruct [:name, :version, :description, :url, :updated_at]
@@ -8,7 +11,7 @@ defmodule HexTweet.Parse do
   end
 
   def parse({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do
-    Poison.Parser.parse!(body)
+    Parser.parse!(body)
   end
 
   def sort(body) when is_map(body) do
@@ -16,7 +19,7 @@ defmodule HexTweet.Parse do
     {:error, _} ->
       {:error, "error"}
     {:ok, version} ->
-      tweet = %HexTweet.Parse{name: body["name"], version: version, description: body["meta"]["description"],
+      tweet = %Parse{name: body["name"], version: version, description: body["meta"]["description"],
       url: body["url"], updated_at: body["updated_at"]}
       {:ok, tweet}
     end
@@ -28,11 +31,11 @@ defmodule HexTweet.Parse do
       |> get
       |> parse
 
-    case Map.has_key?(versions, "releases") && versions["releases"] == [] do
-      true ->
+    if Map.has_key?(versions, "releases") && versions["releases"] == [] do
         {:error, "error"}
-      false ->
-        version = versions
+    else
+        version =
+          versions
           |> parse_release
         {:ok, version}
     end
