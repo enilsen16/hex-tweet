@@ -12,17 +12,30 @@ defmodule HexTweet.Parse do
   end
 
   def sort(body) when is_map(body) do
-    name = body["name"]
-    [%HexTweet.Parse{name: name, version: get_version(name), description: body["meta"]["description"],
-    url: body[:url], updated_at: body["updated_at"]}]
+    case get_version(body) do
+    {:error, _} ->
+      {:error, "error"}
+    {:ok, version} ->
+      tweet = %HexTweet.Parse{name: body["name"], version: version, description: body["meta"]["description"],
+      url: body["url"], updated_at: body["updated_at"]}
+      {:ok, tweet}
+    end
   end
 
   # Temporary
-  defp get_version(name) do
-    "https://hex.pm/api/packages/#{name}"
+  defp get_version(body) do
+    versions = "https://hex.pm/api/packages/#{body["name"]}"
       |> get
       |> parse
-      |> parse_release
+
+    case Map.has_key?(versions, "releases") && versions["releases"] == [] do
+      true ->
+        {:error, "error"}
+      false ->
+        version = versions
+          |> parse_release
+        {:ok, version}
+    end
   end
 
   defp parse_release(body) do

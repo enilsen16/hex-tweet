@@ -14,15 +14,19 @@ defmodule HexTweet.Run do
           tweet(package)
           IO.puts "#{package["name"]} updated!"
         _ ->
-          :do_nothing
+          :error
       end
     end
   end
 
   defp tweet(package) do
-    package
-      |> Parse.sort
-      |> Tweet.build
-      |> Tweet.post
+    case Parse.sort(package) do
+      {:error, _} ->
+        :error
+      {:ok, tweet} ->
+        tweet
+        |> Tweet.build
+        # |> Tweet.post
+    end
   end
 end

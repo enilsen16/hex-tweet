@@ -27,7 +27,7 @@ defmodule ParseTest do
                   |> HexTweet.Parse.parse
       use_cassette "get_version" do
         result = HexTweet.Parse.sort(List.first(response))
-        assert [%HexTweet.Parse{name: _, description: _, version: _, url: _, updated_at: _}] = result
+        assert {:ok, %HexTweet.Parse{name: _, description: _, version: _, url: _, updated_at: _}} = result
       end
     end
   end
