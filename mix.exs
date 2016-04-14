@@ -36,6 +36,7 @@ defmodule HexTweet.Mixfile do
       {:httpoison, "~> 0.8.2"},
       {:oauth, github: "tim/erlang-oauth"},
       {:poison, "~> 2.0", override: true},
+      {:hackney, "~> 1.6.0", override: true},
       {:timex, "~> 2.1.1", override: true},
       {:exvcr, "~> 0.7", only: :test}
     ]
