@@ -2,7 +2,7 @@ defmodule HexTweet.Call do
   alias HexTweet.Run
   use GenServer
 
-  @time_to_subtract 10000 # millaseconds
+  @time_to_subtract 60000 # millaseconds
 
   def start_link do
     GenServer.start_link(__MODULE__, %{})
