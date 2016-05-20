@@ -38,7 +38,8 @@ defmodule HexTweet.Mixfile do
       {:poison, "~> 2.0", override: true},
       {:hackney, "~> 1.6.0", override: true},
       {:timex, "~> 2.1.1", override: true},
-      {:exvcr, "~> 0.7", only: :test}
+      {:exvcr, "~> 0.7", only: :test},
+      {:honeybadger, "~> 0.1"}
     ]
   end
 end
