@@ -7,7 +7,8 @@ defmodule HexTweet.Parse do
   defstruct [:name, :version, :description, :url, :updated_at]
 
   def get(url) do
-    HTTPoison.get(url)
+    headers = [{"Cache-Control", "no-cache"}, {"Pragma", "no-cache"}, {"Host", "hex.pm"}]
+    HTTPoison.get(url, headers)
   end
 
   def parse({:ok, %HTTPoison.Response{status_code: 200, body: body}}) do

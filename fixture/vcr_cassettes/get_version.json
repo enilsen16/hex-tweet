@@ -2,27 +2,31 @@
   {
     "request": {
       "body": "",
-      "headers": [],
+      "headers": {
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Host": "hex.pm"
+      },
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://hex.pm/api/packages/bamboo"
+      "url": "https://hex.pm/api/packages/rebar3_tsung"
     },
     "response": {
-      "body": "{\"url\":\"https://hex.pm/packages/bamboo\",\"updated_at\":\"2016-03-18T21:45:31.105497Z\",\"releases\":[{\"version\":\"0.3.1\",\"url\":\"https://hex.pm/api/packages/bamboo/releases/0.3.1\",\"updated_at\":\"2016-03-18T21:45:31.121915Z\",\"inserted_at\":\"2016-03-18T21:35:16.224170Z\"},{\"version\":\"0.3.0\",\"url\":\"https://hex.pm/api/packages/bamboo/releases/0.3.0\",\"updated_at\":\"2016-02-23T02:57:37.770892Z\",\"inserted_at\":\"2016-02-23T02:57:08.304984Z\"},{\"version\":\"0.2.0\",\"url\":\"https://hex.pm/api/packages/bamboo/releases/0.2.0\",\"updated_at\":\"2016-02-10T18:35:53.880252Z\",\"inserted_at\":\"2016-02-10T18:35:08.916448Z\"},{\"version\":\"0.0.1\",\"url\":\"https://hex.pm/api/packages/bamboo/releases/0.0.1\",\"updated_at\":\"2015-11-03T21:43:14.858817Z\",\"inserted_at\":\"2015-11-03T21:43:14.858801Z\"}],\"name\":\"bamboo\",\"meta\":{\"maintainers\":[\"Paul Smith\"],\"links\":{\"GitHub\":\"https://github.com/paulcsmith/bamboo\"},\"licenses\":[\"MIT\"],\"description\":\"Elixir email for people that love piping. Comes with Phoenix support  and adapters for Mandrill, Sendgrid or anything you want.\",\"contributors\":[]},\"inserted_at\":\"2015-11-03T21:43:14.847965Z\",\"downloads\":{\"week\":6,\"all\":41}}",
+      "body": "{\"url\":\"https://hex.pm/packages/rebar3_tsung\",\"updated_at\":\"2016-05-20T22:50:06.873600Z\",\"releases\":[{\"version\":\"0.1.1\",\"url\":\"https://hex.pm/api/packages/rebar3_tsung/releases/0.1.1\",\"updated_at\":\"2016-05-20T22:50:06.879865Z\",\"inserted_at\":\"2016-05-20T22:50:06.879869Z\"},{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/rebar3_tsung/releases/0.1.0\",\"updated_at\":\"2016-05-20T06:40:53.617790Z\",\"inserted_at\":\"2016-05-20T06:40:53.617795Z\"}],\"name\":\"rebar3_tsung\",\"meta\":{\"maintainers\":[\"Yuyou Chow\"],\"links\":{\"Github\":\"https://github.com/zyuyou/rebar3_tsung\"},\"licenses\":[\"MIT\"],\"description\":\"A rebar plugin for helping develop Tsung plugin\"},\"inserted_at\":\"2016-05-20T05:26:04.112249Z\",\"downloads\":{}}",
       "headers": {
         "Connection": "keep-alive",
         "Server": "Cowboy",
-        "Date": "Fri, 18 Mar 2016 22:31:44 GMT",
-        "Content-Length": "1125",
+        "Date": "Fri, 20 May 2016 23:13:53 GMT",
+        "Content-Length": "706",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "public, max-age=60",
         "Strict-Transport-Security": "max-age=31536000",
         "X-Ratelimit-Limit": "100",
-        "X-Ratelimit-Remaining": "96",
-        "X-Ratelimit-Reset": "1458340357",
-        "Etag": "d6d08f3b58ee8549068b0e4c09961d9c",
-        "Last-Modified": "Fri, 18 Mar 2016 21:45:31 GMT",
+        "X-Ratelimit-Remaining": "99",
+        "X-Ratelimit-Reset": "1463786093",
+        "Etag": "21efa939c76efd0dc7e62255811f30eb",
+        "Last-Modified": "Fri, 20 May 2016 22:50:06 GMT",
         "Vary": "accept, accept-encoding",
         "Via": "1.1 vegur"
       },
