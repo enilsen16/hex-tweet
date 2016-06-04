@@ -10,23 +10,23 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://hex.pm/api/packages/rebar3_tsung"
+      "url": "https://hex.pm/api/packages/decimal_arithmetic"
     },
     "response": {
-      "body": "{\"url\":\"https://hex.pm/packages/rebar3_tsung\",\"updated_at\":\"2016-05-20T22:50:06.873600Z\",\"releases\":[{\"version\":\"0.1.1\",\"url\":\"https://hex.pm/api/packages/rebar3_tsung/releases/0.1.1\",\"updated_at\":\"2016-05-20T22:50:06.879865Z\",\"inserted_at\":\"2016-05-20T22:50:06.879869Z\"},{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/rebar3_tsung/releases/0.1.0\",\"updated_at\":\"2016-05-20T06:40:53.617790Z\",\"inserted_at\":\"2016-05-20T06:40:53.617795Z\"}],\"name\":\"rebar3_tsung\",\"meta\":{\"maintainers\":[\"Yuyou Chow\"],\"links\":{\"Github\":\"https://github.com/zyuyou/rebar3_tsung\"},\"licenses\":[\"MIT\"],\"description\":\"A rebar plugin for helping develop Tsung plugin\"},\"inserted_at\":\"2016-05-20T05:26:04.112249Z\",\"downloads\":{}}",
+      "body": "{\"url\":\"https://hex.pm/packages/decimal_arithmetic\",\"updated_at\":\"2016-06-04T20:55:15.724898\",\"releases\":[{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/decimal_arithmetic/releases/0.1.0\",\"inserted_at\":\"2016-06-04T20:54:45.137848\"}],\"name\":\"decimal_arithmetic\",\"meta\":{\"maintainers\":null,\"links\":{\"Github\":\"https://github.com/jacek-adamek/decimal_arithmetic\"},\"licenses\":[\"MIT\"],\"description\":\"Arithmetic for Decimal library.\"},\"inserted_at\":\"2016-06-04T20:54:44.743132\",\"downloads\":{}}",
       "headers": {
         "Connection": "keep-alive",
         "Server": "Cowboy",
-        "Date": "Fri, 20 May 2016 23:13:53 GMT",
-        "Content-Length": "706",
+        "Date": "Sat, 04 Jun 2016 21:43:22 GMT",
+        "Content-Length": "493",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "public, max-age=60",
         "Strict-Transport-Security": "max-age=31536000",
         "X-Ratelimit-Limit": "100",
-        "X-Ratelimit-Remaining": "99",
-        "X-Ratelimit-Reset": "1463786093",
-        "Etag": "21efa939c76efd0dc7e62255811f30eb",
-        "Last-Modified": "Fri, 20 May 2016 22:50:06 GMT",
+        "X-Ratelimit-Remaining": "98",
+        "X-Ratelimit-Reset": "1465076662",
+        "Etag": "5c2194dc07e298ad841c1f017ddefc3e",
+        "Last-Modified": "Sat, 04 Jun 2016 20:55:15 GMT",
         "Vary": "accept, accept-encoding",
         "Via": "1.1 vegur"
       },
