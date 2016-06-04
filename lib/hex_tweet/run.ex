@@ -4,14 +4,14 @@ defmodule HexTweet.Run do
   use Timex
 
   def execute(time) do
-    converted_time = Timex.shift(DateTime.now, milliseconds: -time)
+    converted_time = Timex.shift(Timex.DateTime.now, milliseconds: -time)
     body =
       "https://hex.pm/api/packages?sort=updated_at"
       |> Parse.get
       |> Parse.parse
 
     for package <- body do
-      case Timex.after?(Timex.parse!(package["updated_at"], "{ISO:Extended}"), converted_time)  do
+      case Timex.after?(Timex.parse!("#{package["updated_at"]}Z", "{ISO:Extended:Z}"), converted_time)  do
         true ->
           tweet(package)
         _ ->
