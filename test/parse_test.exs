@@ -33,10 +33,4 @@ defmodule ParseTest do
       end
     end
   end
-
-  test "parses time correctly" do
-    converted_time = Timex.parse!("2016-06-04T20:54:55.724898Z", "{ISO:Extended:Z}")
-    time = Timex.parse!("2016-06-04T20:55:15.724898Z", "{ISO:Extended:Z}")
-    assert Timex.after?(time, converted_time)
-  end
 end
