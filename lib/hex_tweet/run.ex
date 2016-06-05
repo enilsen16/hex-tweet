@@ -11,7 +11,13 @@ defmodule HexTweet.Run do
       |> Parse.parse
 
     for package <- body do
-      case Timex.after?(Timex.parse!("#{package["updated_at"]}Z", "{ISO:Extended:Z}"), converted_time)  do
+      new_package? =
+        package["updated_at"]
+        |> add_timezone_to_timestamp
+        |> Timex.parse!("{ISO:Extended:Z}")
+        |> Timex.after?(converted_time)
+
+      case new_package? do
         true ->
           tweet(package)
         _ ->
@@ -28,6 +34,15 @@ defmodule HexTweet.Run do
         tweet
         |> Tweet.build
         |> Tweet.post
+    end
+  end
+
+  defp add_timezone_to_timestamp(timestamp) do
+    case String.last(timestamp) do
+      "Z" ->
+        timestamp
+      _ ->
+        "#{timestamp}Z"
     end
   end
 end
