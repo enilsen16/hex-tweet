@@ -13,7 +13,7 @@
       "url": "https://hex.pm/api/packages/decimal_arithmetic"
     },
     "response": {
-      "body": "{\"url\":\"https://hex.pm/packages/decimal_arithmetic\",\"updated_at\":\"2016-06-04T20:55:15.724898\",\"releases\":[{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/decimal_arithmetic/releases/0.1.0\",\"inserted_at\":\"2016-06-04T20:54:45.137848\"}],\"name\":\"decimal_arithmetic\",\"meta\":{\"maintainers\":null,\"links\":{\"Github\":\"https://github.com/jacek-adamek/decimal_arithmetic\"},\"licenses\":[\"MIT\"],\"description\":\"Arithmetic for Decimal library.\"},\"inserted_at\":\"2016-06-04T20:54:44.743132\",\"downloads\":{}}",
+      "body": "{\"url\":\"https://hex.pm/packages/decimal_arithmetic\",\"updated_at\":\"2016-06-04T20:55:15.724898\",\"releases\":[{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/decimal_arithmetic/releases/0.1.0\",\"inserted_at\":\"2016-07-11T23:22:03.134114Z\"}],\"name\":\"decimal_arithmetic\",\"meta\":{\"maintainers\":null,\"links\":{\"Github\":\"https://github.com/jacek-adamek/decimal_arithmetic\"},\"licenses\":[\"MIT\"],\"description\":\"Arithmetic for Decimal library.\"},\"inserted_at\":\"2016-06-04T20:54:44.743132\",\"downloads\":{}}",
       "headers": {
         "Connection": "keep-alive",
         "Server": "Cowboy",

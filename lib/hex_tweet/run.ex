@@ -14,8 +14,7 @@ defmodule HexTweet.Run do
       new_package? =
         package["updated_at"]
         |> add_timezone_to_timestamp
-        |> Timex.parse!("{ISO:Extended:Z}")
-        |> Timex.after?(converted_time)
+        |> Parse.convert_n_compare(converted_time)
 
       case new_package? do
         true ->
