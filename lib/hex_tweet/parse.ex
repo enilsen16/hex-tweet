@@ -26,7 +26,6 @@ defmodule HexTweet.Parse do
     end
   end
 
-  # Temporary
   defp get_version(body) do
     versions = "https://hex.pm/api/packages/#{body["name"]}"
       |> get
@@ -35,14 +34,29 @@ defmodule HexTweet.Parse do
     if Map.has_key?(versions, "releases") && versions["releases"] == [] do
         {:error, "error"}
     else
-        version =
-          versions
-          |> parse_release
-        {:ok, version}
+      case parse_release(versions) do
+        :error ->
+          {:error, "error"}
+        version ->
+          {:ok, version}
+      end
     end
   end
 
   defp parse_release(body) do
-    List.first(body["releases"])["version"]
+    release = List.first(body["releases"])
+    time = Timex.shift(Timex.DateTime.now, milliseconds: -61000)
+
+    if convert_n_compare(release["inserted_at"], time) do
+      release["version"]
+    else
+      :error
+    end
+  end
+
+  def convert_n_compare(time, current_time) do
+    time
+    |> Timex.parse!("{ISO:Extended:Z}")
+    |> Timex.after?(current_time)
   end
 end
