@@ -10,7 +10,7 @@ defmodule HexTweet.Mixfile do
      ],
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps]
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -34,11 +34,10 @@ defmodule HexTweet.Mixfile do
     [
       {:extwitter, "~> 0.6"},
       {:httpoison, "~> 0.8"},
-      {:oauth, github: "tim/erlang-oauth"},
-      {:poison, "~> 2.0", override: true},
-      {:idna, "~> 3.0", override: true},
-      {:hackney, "~> 1.6", override: true},
-      {:timex, "~> 2.1", override: true},
+      # {:oauth, github: "tim/erlang-oauth"},
+      # {:poison, "~> 2.0", override: true},
+      # {:idna, "~> 3.0", override: true},
+      {:timex, "~> 2.0"},
       {:exvcr, "~> 0.7", only: :test}
       # {:honeybadger, "~> 0.1"}
     ]

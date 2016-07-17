@@ -10,23 +10,23 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://hex.pm/api/packages/decimal_arithmetic"
+      "url": "https://hex.pm/api/packages/krypto"
     },
     "response": {
-      "body": "{\"url\":\"https://hex.pm/packages/decimal_arithmetic\",\"updated_at\":\"2016-06-04T20:55:15.724898\",\"releases\":[{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/decimal_arithmetic/releases/0.1.0\",\"inserted_at\":\"2016-07-11T23:22:03.134114Z\"}],\"name\":\"decimal_arithmetic\",\"meta\":{\"maintainers\":null,\"links\":{\"Github\":\"https://github.com/jacek-adamek/decimal_arithmetic\"},\"licenses\":[\"MIT\"],\"description\":\"Arithmetic for Decimal library.\"},\"inserted_at\":\"2016-06-04T20:54:44.743132\",\"downloads\":{}}",
+      "body": "{\"url\":\"https://hex.pm/packages/krypto\",\"updated_at\":\"2016-07-17T03:13:22.172258Z\",\"releases\":[{\"version\":\"0.1.1\",\"url\":\"https://hex.pm/api/packages/krypto/releases/0.1.1\",\"inserted_at\":\"2016-07-17T02:40:00.633368Z\"}],\"name\":\"krypto\",\"meta\":{\"maintainers\":[\"Lef Ioannidis\"],\"links\":{\"GitHub\":\"https://github.com/elefthei/krypto\",\"Docs\":\"https://github.com/elefthei/krypto\"},\"licenses\":[\"MIT\"],\"description\":\"Crypto implementation in Elixir, using Erlang crypto, public_key and OpenSSL ports.\"},\"inserted_at\":\"2016-07-17T02:40:00.628176Z\",\"downloads\":{}}",
       "headers": {
         "Connection": "keep-alive",
         "Server": "Cowboy",
-        "Date": "Sat, 04 Jun 2016 21:43:22 GMT",
-        "Content-Length": "493",
+        "Date": "Sun, 17 Jul 2016 04:32:54 GMT",
+        "Content-Length": "553",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "public, max-age=60",
         "Strict-Transport-Security": "max-age=31536000",
         "X-Ratelimit-Limit": "100",
         "X-Ratelimit-Remaining": "98",
-        "X-Ratelimit-Reset": "1465076662",
-        "Etag": "5c2194dc07e298ad841c1f017ddefc3e",
-        "Last-Modified": "Sat, 04 Jun 2016 20:55:15 GMT",
+        "X-Ratelimit-Reset": "1468730034",
+        "Etag": "7dfc1a23776ac7b633f3025cbca4f0f3",
+        "Last-Modified": "Sun, 17 Jul 2016 03:13:22 GMT",
         "Vary": "accept, accept-encoding",
         "Via": "1.1 vegur"
       },
