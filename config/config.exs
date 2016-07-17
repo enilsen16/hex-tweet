@@ -36,9 +36,9 @@ config :extwitter, :oauth, [
    access_token_secret: System.get_env("TWITTER_ACCESS_SECRET")
 ]
 
-config :honeybadger,
- environment_name: :prod
-
-if Mix.env == :prod do
-  config :honeybadger, api_key: System.get_env("HONEYBADGER_API_KEY")
-end
+# config :honeybadger,
+#  environment_name: :prod
+#
+# if Mix.env == :prod do
+#   config :honeybadger, api_key: System.get_env("HONEYBADGER_API_KEY")
+# end

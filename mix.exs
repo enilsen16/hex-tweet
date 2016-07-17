@@ -39,8 +39,8 @@ defmodule HexTweet.Mixfile do
       {:idna, "~> 3.0", override: true},
       {:hackney, "~> 1.6", override: true},
       {:timex, "~> 2.1", override: true},
-      {:exvcr, "~> 0.7", only: :test},
-      {:honeybadger, "~> 0.1"}
+      {:exvcr, "~> 0.7", only: :test}
+      # {:honeybadger, "~> 0.1"}
     ]
   end
 end
