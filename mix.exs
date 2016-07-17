@@ -34,12 +34,9 @@ defmodule HexTweet.Mixfile do
     [
       {:extwitter, "~> 0.6"},
       {:httpoison, "~> 0.8"},
-      # {:oauth, github: "tim/erlang-oauth"},
-      # {:poison, "~> 2.0", override: true},
-      # {:idna, "~> 3.0", override: true},
+      {:oauth, github: "tim/erlang-oauth"},
       {:timex, "~> 2.0"},
       {:exvcr, "~> 0.7", only: :test}
-      # {:honeybadger, "~> 0.1"}
     ]
   end
 end
