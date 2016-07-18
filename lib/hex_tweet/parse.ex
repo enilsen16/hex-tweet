@@ -45,7 +45,7 @@ defmodule HexTweet.Parse do
 
   defp parse_release(body) do
     release = List.first(body["releases"])
-    time = Timex.shift(Timex.DateTime.now, milliseconds: -61000)
+    time = Timex.shift(Timex.DateTime.now, milliseconds: -70000)
 
     if convert_n_compare(release["inserted_at"], time) do
       release["version"]
