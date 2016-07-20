@@ -2,8 +2,6 @@ defmodule HexTweet.Parse do
   alias HexTweet.Parse
   alias Poison.Parser
 
-  use HTTPoison.Base
-
   defstruct [:name, :version, :description, :url, :updated_at]
 
   def get(url) do
