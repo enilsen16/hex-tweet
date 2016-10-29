@@ -19,7 +19,7 @@ defmodule HexTweet.Parse do
       {:error, "error"}
     {:ok, version} ->
       tweet = %Parse{name: body["name"], version: version, description: body["meta"]["description"],
-      url: body["url"], updated_at: body["updated_at"]}
+      url: "https://hex.pm/packages/#{body["name"]}", updated_at: body["updated_at"]}
       {:ok, tweet}
     end
   end
@@ -43,7 +43,7 @@ defmodule HexTweet.Parse do
 
   defp parse_release(body) do
     release = List.first(body["releases"])
-    time = Timex.shift(Timex.DateTime.now, milliseconds: -70_000)
+    time = Timex.shift(Timex.now, milliseconds: -70_000)
 
     if convert_n_compare(release["inserted_at"], time) do
       release["version"]

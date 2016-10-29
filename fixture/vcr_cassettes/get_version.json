@@ -10,23 +10,23 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://hex.pm/api/packages/krypto"
+      "url": "https://hex.pm/api/packages/kitchen_sink"
     },
     "response": {
-      "body": "{\"url\":\"https://hex.pm/packages/krypto\",\"updated_at\":\"2016-07-17T03:13:22.172258Z\",\"releases\":[{\"version\":\"0.1.1\",\"url\":\"https://hex.pm/api/packages/krypto/releases/0.1.1\",\"inserted_at\":\"2016-07-17T02:40:00.633368Z\"}],\"name\":\"krypto\",\"meta\":{\"maintainers\":[\"Lef Ioannidis\"],\"links\":{\"GitHub\":\"https://github.com/elefthei/krypto\",\"Docs\":\"https://github.com/elefthei/krypto\"},\"licenses\":[\"MIT\"],\"description\":\"Crypto implementation in Elixir, using Erlang crypto, public_key and OpenSSL ports.\"},\"inserted_at\":\"2016-07-17T02:40:00.628176Z\",\"downloads\":{}}",
+      "body": "{\"url\":\"https://hex.pm/api/packages/kitchen_sink\",\"updated_at\":\"2016-10-28T23:19:26.619571Z\",\"releases\":[{\"version\":\"0.0.10\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.10\",\"updated_at\":\"2016-10-28T23:19:26.617433Z\",\"inserted_at\":\"2016-10-28T23:19:21.634666Z\"},{\"version\":\"0.0.9\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.9\",\"updated_at\":\"2016-10-27T20:56:33.544327Z\",\"inserted_at\":\"2016-10-27T20:56:27.402028Z\"},{\"version\":\"0.0.8\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.8\",\"updated_at\":\"2016-10-25T23:04:52.075112Z\",\"inserted_at\":\"2016-10-25T23:04:48.644812Z\"},{\"version\":\"0.0.7\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.7\",\"updated_at\":\"2016-10-25T22:47:24.321289Z\",\"inserted_at\":\"2016-10-25T22:01:23.510759Z\"},{\"version\":\"0.0.6\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.6\",\"updated_at\":\"2016-10-25T19:29:30.822123Z\",\"inserted_at\":\"2016-10-25T19:29:25.760083Z\"},{\"version\":\"0.0.5\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.5\",\"updated_at\":\"2016-10-24T22:54:46.049378Z\",\"inserted_at\":\"2016-10-24T22:54:42.960408Z\"},{\"version\":\"0.0.4\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.4\",\"updated_at\":\"2016-10-24T21:19:40.670610Z\",\"inserted_at\":\"2016-10-24T21:19:36.790270Z\"},{\"version\":\"0.0.3\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.3\",\"updated_at\":\"2016-10-19T13:57:11.553847Z\",\"inserted_at\":\"2016-10-19T13:57:03.902409Z\"},{\"version\":\"0.0.2\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.2\",\"updated_at\":\"2016-10-14T07:59:22.338031Z\",\"inserted_at\":\"2016-10-14T07:59:14.793857Z\"},{\"version\":\"0.0.1\",\"url\":\"https://hex.pm/api/packages/kitchen_sink/releases/0.0.1\",\"updated_at\":\"2016-09-13T01:52:15.552241Z\",\"inserted_at\":\"2016-09-13T01:51:48.056269Z\"}],\"owners\":[{\"username\":\"kenips\",\"url\":\"https://hex.pm/api/users/kenips\"},{\"username\":\"somethingitalian\",\"url\":\"https://hex.pm/api/users/somethingitalian\"}],\"name\":\"kitchen_sink\",\"meta\":{\"maintainers\":[\"Paul Iannazzo\"],\"links\":{\"GitHub\":\"https://github.com/planswell/kitchen-sink\"},\"licenses\":[\"MIT\"],\"description\":\"Mixins for Elixir namespaces and Misc utility functions\"},\"inserted_at\":\"2016-09-13T01:51:48.041082Z\",\"downloads\":{\"week\":63,\"day\":8,\"all\":330}}",
       "headers": {
         "Connection": "keep-alive",
         "Server": "Cowboy",
-        "Date": "Sun, 17 Jul 2016 04:32:54 GMT",
-        "Content-Length": "553",
+        "Date": "Sat, 29 Oct 2016 02:17:32 GMT",
+        "Content-Length": "2276",
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "public, max-age=60",
         "Strict-Transport-Security": "max-age=31536000",
         "X-Ratelimit-Limit": "100",
         "X-Ratelimit-Remaining": "98",
-        "X-Ratelimit-Reset": "1468730034",
-        "Etag": "7dfc1a23776ac7b633f3025cbca4f0f3",
-        "Last-Modified": "Sun, 17 Jul 2016 03:13:22 GMT",
+        "X-Ratelimit-Reset": "1477707512",
+        "Etag": "98a0ca46e32bcaacf601ee75f4cd1328",
+        "Last-Modified": "Fri, 28 Oct 2016 23:19:26 GMT",
         "Vary": "accept, accept-encoding",
         "Via": "1.1 vegur"
       },
