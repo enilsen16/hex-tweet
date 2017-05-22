@@ -18,7 +18,7 @@ defmodule HexTweet.Tweet do
     length = String.length("#{structure.name} (#{structure.version}): #{structure.url}")
     length_of_description = (140 - length) - 4
     <<string::binary-size(length_of_description), _::binary >> = structure.description
-    string = String.strip(string)
+    string = String.trim(string)
     "#{structure.name} (#{structure.version}): #{string}... #{structure.url}"
   end
 end

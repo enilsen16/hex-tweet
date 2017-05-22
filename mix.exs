@@ -17,7 +17,7 @@ defmodule HexTweet.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison, :extwitter, :timex, :sasl],
+    [applications: [:logger, :httpoison, :extwitter, :timex, :sasl, :oauth, :oauther, :poison],
      mod: {HexTweet, []}]
   end
 
@@ -32,7 +32,6 @@ defmodule HexTweet.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:distillery, "~> 1.4"},
       {:extwitter, "~> 0.6"},
       {:exvcr, "~> 0.7", only: :test},
       {:httpoison, "~> 0.8"},

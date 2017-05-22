@@ -1,6 +1,5 @@
 defmodule HexTweet.Run do
   alias HexTweet.{Parse, Tweet}
-  alias Timex.{DateTime}
   use Timex
 
   def execute(time) do
