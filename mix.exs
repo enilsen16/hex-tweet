@@ -4,7 +4,7 @@ defmodule HexTweet.Mixfile do
   def project do
     [app: :hex_tweet,
      version: "0.0.1",
-     elixir: "~> 1.2",
+     elixir: "~> 1.4",
      preferred_cli_env: [
        vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
      ],
@@ -17,7 +17,7 @@ defmodule HexTweet.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :httpoison, :extwitter, :timex, :sasl, :oauth, :oauther, :poison],
+    [extra_applications: [:logger, :httpoison, :extwitter, :timex, :oauth],
      mod: {HexTweet, []}]
   end
 
