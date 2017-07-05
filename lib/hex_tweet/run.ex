@@ -12,7 +12,7 @@ defmodule HexTweet.Run do
     for package <- body do
       new_package? =
         package["updated_at"]
-        |> add_timezone_to_timestamp
+        |> add_timezone_to_timestamp()
         |> Parse.convert_n_compare(converted_time)
 
       case new_package? do

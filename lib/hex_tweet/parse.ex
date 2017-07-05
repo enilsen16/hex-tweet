@@ -42,11 +42,14 @@ defmodule HexTweet.Parse do
   end
 
   defp parse_release(body) do
-    release = List.first(body["releases"])
+    # For now we'll just assume that the package's version number has to be incremented if a package is updated
+    last_updated = body["updated_at"]
     time = Timex.shift(Timex.now, milliseconds: -70_000)
 
-    if convert_n_compare(release["inserted_at"], time) do
-      release["version"]
+    if convert_n_compare(last_updated, time) do
+      body["releases"]
+        |> List.first()
+        |> Map.get("version")
     else
       :error
     end
