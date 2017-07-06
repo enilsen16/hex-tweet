@@ -1,4 +1,5 @@
 defmodule HexTweet.Tweet do
+  require Logger
 
   def build(structure) do
     tweet = "#{structure.name} (#{structure.version}): #{structure.description} #{structure.url}"
@@ -10,7 +11,7 @@ defmodule HexTweet.Tweet do
   end
 
   def post({:ok, tweet}) do
-    IO.puts tweet
+    Logger.info(tweet)
     ExTwitter.update(tweet)
   end
 
