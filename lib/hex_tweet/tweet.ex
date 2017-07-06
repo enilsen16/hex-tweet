@@ -11,8 +11,8 @@ defmodule HexTweet.Tweet do
   end
 
   def post({:ok, tweet}) do
-    Logger.info(tweet)
     ExTwitter.update(tweet)
+    Logger.info(tweet)
   end
 
   defp _build(structure) do
