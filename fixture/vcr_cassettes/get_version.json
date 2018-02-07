@@ -10,23 +10,23 @@
       "method": "get",
       "options": [],
       "request_body": "",
-      "url": "https://hex.pm/api/packages/triplex"
+      "url": "https://hex.pm/api/packages/external_service"
     },
     "response": {
-      "body": "{\"url\":\"https://hex.pm/api/packages/triplex\",\"updated_at\":\"2017-07-05T22:10:35.972671Z\",\"releases\":[{\"version\":\"0.5.1\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.5.1\"},{\"version\":\"0.5.0\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.5.0\"},{\"version\":\"0.4.2\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.4.2\"},{\"version\":\"0.4.1\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.4.1\"},{\"version\":\"0.4.0\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.4.0\"},{\"version\":\"0.3.3\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.3.3\"},{\"version\":\"0.3.2\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.3.2\"},{\"version\":\"0.3.1\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.3.1\"},{\"version\":\"0.3.0\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.3.0\"},{\"version\":\"0.2.2\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.2.2\"},{\"version\":\"0.2.1\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.2.1\"},{\"version\":\"0.2.0\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.2.0\"},{\"version\":\"0.1.0\",\"url\":\"https://hex.pm/api/packages/triplex/releases/0.1.0\"}],\"owners\":[{\"username\":\"kelvinst\",\"url\":\"https://hex.pm/api/users/kelvinst\",\"email\":\"kelvin.stinghen@gmail.com\"}],\"name\":\"triplex\",\"meta\":{\"maintainers\":[\"Kelvin Stinghen\"],\"links\":{\"GitHub\":\"https://github.com/ateliware/triplex\"},\"licenses\":[\"MIT\"],\"description\":\"An https://github.com/influitive/apartment for succesfull Phoenix\\nprogrammers.\"},\"inserted_at\":\"2017-06-29T01:47:09.763780Z\",\"downloads\":[{\"week\":71},{\"all\":71},{\"day\":1}]}",
+      "body": "{\"url\":\"https://hex.pm/api/packages/external_service\",\"updated_at\":\"2018-02-07T19:36:18.679832Z\",\"retirements\":{},\"repository\":\"hexpm\",\"releases\":[{\"version\":\"0.7.0\",\"url\":\"https://hex.pm/api/packages/external_service/releases/0.7.0\"},{\"version\":\"0.6.0\",\"url\":\"https://hex.pm/api/packages/external_service/releases/0.6.0\"},{\"version\":\"0.5.1\",\"url\":\"https://hex.pm/api/packages/external_service/releases/0.5.1\"},{\"version\":\"0.5.0\",\"url\":\"https://hex.pm/api/packages/external_service/releases/0.5.0\"}],\"owners\":[{\"username\":\"jvoegele\",\"url\":\"https://hex.pm/api/users/jvoegele\",\"email\":\"jason.voegele@gmail.com\"}],\"name\":\"external_service\",\"meta\":{\"maintainers\":[\"Jason Voegele\",\"Chad Jablonski\"],\"links\":{\"GitHub\":\"https://github.com/jvoegele/external_service\"},\"licenses\":[\"Apache 2.0\"],\"description\":\"Elixir library for safely consuming external services using retry logic and circuit breakers\"},\"inserted_at\":\"2017-08-02T17:11:14.294545Z\",\"html_url\":\"https://hex.pm/packages/external_service\",\"downloads\":{\"week\":18,\"recent\":1231,\"day\":2,\"all\":2241}}",
       "headers": {
         "Connection": "keep-alive",
         "Server": "Cowboy",
-        "Date": "Wed, 05 Jul 2017 22:43:57 GMT",
-        "Content-Length": "1565",
+        "Date": "Wed, 07 Feb 2018 19:41:54 GMT",
+        "Content-Length": "1051",
         "Content-Type": "application/vnd.hex+json; charset=utf-8",
         "Cache-Control": "public, max-age=60",
         "Strict-Transport-Security": "max-age=31536000",
         "X-Ratelimit-Limit": "100",
         "X-Ratelimit-Remaining": "98",
-        "X-Ratelimit-Reset": "1499294640",
-        "Etag": "4ef917c57406fdca963a1df68e4dd258",
-        "Last-Modified": "Wed, 05 Jul 2017 22:10:35 GMT",
+        "X-Ratelimit-Reset": "1518032520",
+        "Etag": "e7b0e0e62fe5a42198457f7f4474c536",
+        "Last-Modified": "Wed, 07 Feb 2018 19:36:18 GMT",
         "Vary": "accept, accept-encoding, accept-encoding",
         "Via": "1.1 vegur"
       },
