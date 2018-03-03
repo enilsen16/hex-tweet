@@ -16,6 +16,12 @@ defmodule HexTweet do
     # See http://elixir-lang.org/docs/stable/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: HexTweet.Supervisor]
+
+    IO.puts System.get_env("TWITTER_CONSUMER_KEY")
+    IO.puts System.get_env("TWITTER_CONSUMER_SECRET")
+    IO.puts System.get_env("TWITTER_ACCESS_TOKEN")
+    IO.puts System.get_env("TWITTER_ACCESS_SECRET")
+    
     Supervisor.start_link(children, opts)
   end
 end
