@@ -4,7 +4,7 @@ defmodule HexTweet.Mixfile do
   def project do
     [app: :hex_tweet,
      version: "0.0.1",
-     elixir: "~> 1.4",
+     elixir: "~> 1.6",
      preferred_cli_env: [
        vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
      ],
@@ -34,7 +34,7 @@ defmodule HexTweet.Mixfile do
     [
       {:extwitter, "~> 0.6"},
       {:exvcr, "~> 0.7", only: :test},
-      {:httpoison, "~> 0.8"},
+      {:httpoison, "~> 1.0"},
       {:oauth, github: "tim/erlang-oauth"},
       {:timex, "~> 3.0"}
     ]
