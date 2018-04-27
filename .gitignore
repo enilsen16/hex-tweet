@@ -5,7 +5,7 @@
 /deps
 erl_crash.dump
 *.ez
-
+.envrc
 
 ### OSX ###
 .DS_Store
